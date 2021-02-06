@@ -1,10 +1,7 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
 
-abbr.era{
-	font-variant: all-small-caps;
-}
-
+/* Letters */
 [epub|type~="z3998:letter"] header{
 	text-align: right;
 }
@@ -28,8 +25,9 @@ footer{
 	text-align: initial;
 	text-indent: 0;
 }
+/* End letters */
 
-/* Poetry an song */
+/* Poetry and song */
 [epub|type~="z3998:poem"] p,
 [epub|type~="z3998:song"] p{
 	text-align: initial;
@@ -82,3 +80,53 @@ section[epub|type~="dedication"] > *{
 	}
 }
 /* End all dedications */
+
+abbr.era{
+	font-variant: all-small-caps;
+}
+
+header{
+	font-variant: small-caps;
+	margin: 1em;
+	text-align: center;
+}
+
+/* Preface */
+#preface footer > p:nth-child(2){
+	text-align: initial;
+}
+/* End preface */
+
+/* Chapter 1 */
+#chapter-1 blockquote > header > p:nth-child(1){
+	text-align: center;
+}
+
+#chapter-1 blockquote > header > p:nth-child(2){
+	margin-top: 1em;
+}
+
+#chapter-1 blockquote > header > p > time{
+	font-variant: normal;
+}
+
+#chapter-1 blockquote > footer{
+	text-align: initial;
+}
+
+#chapter-1 blockquote > footer > p:nth-child(1),
+#chapter-1 blockquote > footer > p:nth-child(2){
+	text-align: right;
+}
+
+#chapter-1 blockquote > footer > p:nth-child(2){
+	margin-bottom: 1em;
+}
+
+#chapter-1 blockquote > footer > p:nth-child(4),
+#chapter-1 blockquote > footer > p:nth-child(8){
+	font-variant: small-caps;
+	margin: 1em;
+	text-align: center;
+}
+/* End chapter 1 */
