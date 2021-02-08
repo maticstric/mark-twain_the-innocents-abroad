@@ -92,42 +92,57 @@ header{
 }
 
 /* Preface */
-#preface footer > p:nth-child(2){
+#preface footer > p:nth-of-type(2){
 	text-align: initial;
 }
 /* End preface */
 
 /* Chapter 1 */
-#chapter-1 blockquote > header > p:nth-child(1){
+#chapter-1 header > p:nth-of-type(1){
 	text-align: center;
-}
-
-#chapter-1 blockquote > header > p:nth-child(2){
-	margin-top: 1em;
-}
-
-#chapter-1 blockquote > header > p > time{
-	font-variant: normal;
-}
-
-#chapter-1 blockquote > footer{
-	text-align: initial;
-}
-
-#chapter-1 blockquote > footer > p:nth-child(1),
-#chapter-1 blockquote > footer > p:nth-child(2){
-	text-align: right;
-}
-
-#chapter-1 blockquote > footer > p:nth-child(2){
 	margin-bottom: 1em;
 }
 
-#chapter-1 blockquote > footer > p:nth-child(4),
-#chapter-1 blockquote > footer > p:nth-child(8){
+#chapter-1 header > p:nth-of-type(2){
+	text-align: right;
+}
+
+#chapter-1 header > p > time{
+	font-variant: normal;
+}
+
+#chapter-1 footer{
+	text-align: initial;
+}
+
+#chapter-1 footer > p:nth-of-type(1),
+#chapter-1 footer > p:nth-of-type(2){
+	text-align: right;
+}
+
+#chapter-1 footer > p:nth-of-type(2){
+	margin-bottom: 1em;
+}
+
+#chapter-1 footer > p:nth-of-type(4),
+#chapter-1 footer > p:nth-of-type(5){
 	font-variant: small-caps;
 	margin: 1em;
 	text-align: center;
 	text-indent: 0em;
+}
+
+#chapter-1 div > p{
+	text-indent: 0em;
+	text-align: center;
+}
+
+@supports(display: flex){
+	@media(min-width: 30em){
+		#chapter-1 div{
+			display: flex;
+			justify-content: space-around;
+		}
+	}
 }
 /* End chapter 1 */
