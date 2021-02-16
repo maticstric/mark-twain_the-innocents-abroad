@@ -129,16 +129,16 @@ header{
 	font-variant: small-caps;
 	margin: 1em;
 	text-align: center;
-	text-indent: 0em;
+	text-indent: 0;
 }
 
 #chapter-1 div > p{
-	text-indent: 0em;
+	text-indent: 0;
 	text-align: center;
 }
 
 @supports(display: flex){
-	@media(min-width: 30em){
+	@media(min-width:30em){
 		#chapter-1 div{
 			display: flex;
 			justify-content: space-around;
@@ -146,3 +146,18 @@ header{
 	}
 }
 /* End chapter 1 */
+
+/* Chapter 5 */
+#chapter-5 blockquote > p{
+	text-indent: 0;
+}
+
+#chapter-5 blockquote > p:nth-of-type(4){
+	text-indent: 1em;
+	margin-top: 1em;
+}
+
+#chapter-5 blockquote > p > span{
+	float: right;
+}
+/* End chapter 5 */
