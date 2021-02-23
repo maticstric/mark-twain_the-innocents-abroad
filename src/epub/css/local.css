@@ -133,19 +133,19 @@ header{
 }
 
 #chapter-1 div > p{
-	text-indent: 0em;
+	text-indent: 0;
 	text-align: center;
 }
 
 @supports(display: flex){
-  @media(min-width: 30em) {
-    #chapter-1 div{
-      display: flex;
-      margin: auto;
-      max-width: 30em;
-      justify-content: space-around;
-    }
-  }
+	@media(min-width:30em){
+		#chapter-1 div{
+			display: flex;
+			margin: auto;
+			max-width: 30em;
+			justify-content: space-around;
+		}
+	}
 }
 /* End chapter 1 */
 
