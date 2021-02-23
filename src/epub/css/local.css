@@ -138,12 +138,14 @@ header{
 }
 
 @supports(display: flex){
-	#chapter-1 div{
-		display: flex;
-		margin: auto;
-		max-width: 30em;
-		justify-content: space-around;
-	}
+  @media(min-width: 30em) {
+    #chapter-1 div{
+      display: flex;
+      margin: auto;
+      max-width: 30em;
+      justify-content: space-around;
+    }
+  }
 }
 /* End chapter 1 */
 
