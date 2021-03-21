@@ -150,16 +150,21 @@ header{
 /* End chapter 1 */
 
 /* Chapter 5 */
-#chapter-5 blockquote > p{
-	text-indent: 0;
+#chapter-5 table{
+	width: 100%;
 }
 
-#chapter-5 blockquote > p:nth-of-type(4){
+#chapter-5 td:last-child{
+	font-variant-numeric: tabular-nums;
+	text-align: right;
+	width: 3em;
+}
+
+#chapter-5 tr:last-child > td:first-child{
 	text-indent: 1em;
-	margin-top: 1em;
 }
 
-#chapter-5 blockquote > p > span{
-	float: right;
+#chapter-5 tr:last-child > td:last-child{
+	border-top: 1px solid black;
 }
 /* End chapter 5 */
